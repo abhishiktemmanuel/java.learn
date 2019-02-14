@@ -12,6 +12,7 @@ class boundryelementssort
             for(int j=0;j<n;j++)
                 a[i][j]=ob.nextInt();
         int b[]=new int[(4*n)-3];
+        //to copy boundry in linear array
         int r=0,c=-1,p=1,k=0;
         for(int i=0;i<2;i++)
         {
@@ -29,6 +30,7 @@ class boundryelementssort
             }
             p=p*(-1);
         }
+        //to sort linear array. 
         for(int i=0;i<((4*n)-4);i++)
         {
             for(int j=0;j<((4*n)-4-i);j++)
@@ -41,8 +43,8 @@ class boundryelementssort
                 }
             }
         }
-        for(int i=0;i<(4*n -3);i++)
-         System.out.println(b[i]);
+        //to replace boundry with linear array.  
+
         r=0;c=-1;p=1;k=-1;
         for(int i=0;i<2;i++)
         {
@@ -58,6 +60,7 @@ class boundryelementssort
             }
             p=p*(-1);
         }
+        //printing statements
         for(int i=0;i<n;i++)
             {
                 for(int j=0;j<n;j++)
@@ -73,13 +76,6 @@ class boundryelementssort
                 }
                 System.out.println();
             }
-            for(int i=0;i<n;i++)
-        {
-            System.out.println();
-            for(int j=0;j<n;j++)
-            {
-                System.out.print(a[i][j]);
-            }  
-        }
+
     }
 }
