@@ -2,7 +2,7 @@ import java.util.*                                        ;
 class truthtable                                          {
     Scanner ob=new Scanner(System.in)                     ;
     void main()                                           {
-        System.out.println("ENTER END NUMBER")            ;
+        System.out.println("ENTER NUMBER OF TERMS 'n'")            ;
         int n=ob.nextInt()                                ;
         int d=(int)Math.pow(2,n)                          ;
         int a[][]=new int[d][n]                           ;
